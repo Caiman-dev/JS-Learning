@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivanov_Exam_02</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="body">
+    <div id="test-name" class="body-label">
+        <label>TEST</label>
+    </div>
+    <div id="quiz" class="quiz-container">
+        <div class="quiz-indicator" id="indicator">
+            <label>Вопрос</label>
+            <label id="currentQuestion"></label>
+            <label>из</label>
+            <label id="numberOfQuestions"></label>
+        </div><br>
+        <div class="quiz-question">
+            <labeL id="question"></labeL><br>
+        </div>
+        <ul class="quiz-answers" id="answers">
+            <li>
+                <label class="option-label">
+                    <input type="radio" id="r0" class="answer" name="answer" checked />
+                    <span class="option-span">ответ1</span>
+                </label>
+            </li>
+            <li>
+                <label class="option-label">
+                    <input type="radio" id="r1" class="answer" name="answer" />
+                    <span class="option-span">ответ2</span>
+                </label>
+            </li>
+            <li>
+                <label class="option-label">
+                    <input type="radio" id="r2" class="answer" name="answer" />
+                    <span class="option-span">ответ3</span>
+                </label>
+            </li>
+            <li>
+                <label class="option-label">
+                    <input type="radio" id="r3" class="answer" name="answer" />
+                    <span class="option-span">ответ4</span>
+                </label>
+            </li>
+        </ul>
+        <button class="quiz-submit btn-gradient" id="submit" onclick="AnswerClick()">Ответить</button>
+    </div>
+
+    <!-- End Test Modal -->
+    <div id="endTestModal" class="modal">
+        <div class="modal-content center">
+            <div>
+                <span>Your score is:</span>
+                <span id="score"></span>
+            </div><br><br>
+            <div>Пройти тест заново?</div><br><br>
+            <div class="modal-buttons">
+                <input type="button" class="quiz-submit btn-gradient" onclick="" value="Нет" />
+                <input type="button" class="quiz-submit btn-gradient" onclick="StartTest()" value="Да" />
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+
+</html>
